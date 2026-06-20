@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Outer Circle -->
+    <path
+        android:fillColor="#6655EE"
+        android:pathData="M50,50m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0" />
+    <!-- Inner Circle -->
+    <path
+        android:fillColor="#4433AA"
+        android:pathData="M50,50m-35,0a35,35 0,1 1,70 0a35,35 0,1 1,-70 0" />
+    <!-- Lightning Bolt -->
+    <path
+        android:fillColor="#FFEE99"
+        android:pathData="M55,20 L35,55 L48,55 L42,80 L65,40 L52,40 Z" />
+</vector>

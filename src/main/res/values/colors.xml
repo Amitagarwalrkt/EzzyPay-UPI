@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#070600</color>
+    <color name="s1">#0F0D02</color>
+    <color name="s2">#181400</color>
+    <color name="s3">#221C04</color>
+    <color name="amber">#FFB800</color>
+    <color name="gold">#FFD60A</color>
+    <color name="accent_blue">#0A84FF</color>
+    <color name="cyan">#38BDF8</color>
+    <color name="success_green">#00F5A0</color>
+    <color name="error_red">#FF3B5C</color>
+    <color name="warning_yellow">#FFB800</color>
+    <color name="text_white">#FFF8E7</color>
+    <color name="text_grey">#5A4A20</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="wallet_amber_start">#3D2800</color>
+    <color name="wallet_amber_mid">#7A5000</color>
+    <color name="wallet_amber_end">#C88800</color>
+
+    <!-- Blue Gradient for Online Mode -->
+    <color name="wallet_grad_start">#001529</color>
+    <color name="wallet_grad_mid">#003366</color>
+    <color name="wallet_grad_end">#00509d</color>
+</resources>

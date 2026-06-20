@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_processing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/proc_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/proc_icon_container"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="32dp">
+
+            <View
+                android:id="@+id/ripple_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pin_dot_empty"
+                android:backgroundTint="@color/amber"
+                android:alpha="0" />
+            <View
+                android:id="@+id/ripple_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pin_dot_empty"
+                android:backgroundTint="@color/amber"
+                android:alpha="0" />
+
+            <View
+                android:id="@+id/proc_core"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/wallet_card_offline_bg" />
+            <TextView
+                android:id="@+id/proc_icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="⚡"
+                android:textSize="40sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/proc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Processing..."
+            android:textColor="@color/text_white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/proc_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Deducting from wallet\nNo internet needed"
+            android:textColor="@color/text_grey"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/proc_progress_bg"
+            android:layout_width="200dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/s2" />
+
+        <View
+            android:id="@+id/proc_progress_fill"
+            android:layout_width="20dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="-4dp"
+            android:background="@color/amber" />
+
+        <LinearLayout
+            android:id="@+id/proc_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="40dp">
+
+            <LinearLayout
+                android:id="@+id/proc_step_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+                <TextView android:id="@+id/step_1_icon" android:layout_width="24dp" android:layout_height="24dp" android:background="#2200F5A0" android:gravity="center" android:text="✓" android:textColor="@color/success_green" android:textSize="12sp" android:textStyle="bold" />
+                <TextView android:id="@+id/step_1_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="WPIN verified" android:textColor="@color/success_green" android:textSize="13sp" android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/proc_step_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+                <TextView android:id="@+id/step_2_icon" android:layout_width="24dp" android:layout_height="24dp" android:background="#2200F5A0" android:gravity="center" android:text="✓" android:textColor="@color/success_green" android:textSize="12sp" android:textStyle="bold" />
+                <TextView android:id="@+id/step_2_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="Balance checked" android:textColor="@color/success_green" android:textSize="13sp" android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/proc_step_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+                <TextView android:id="@+id/step_3_icon" android:layout_width="24dp" android:layout_height="24dp" android:background="#22FFB800" android:gravity="center" android:text="↻" android:textColor="@color/amber" android:textSize="12sp" android:textStyle="bold" />
+                <TextView android:id="@+id/step_3_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="Deducting from wallet..." android:textColor="@color/amber" android:textSize="13sp" android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/proc_step_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp"
+                android:alpha="0.4">
+                <TextView android:id="@+id/step_4_icon" android:layout_width="24dp" android:layout_height="24dp" android:background="@color/s2" android:gravity="center" android:text="○" android:textColor="@color/text_grey" android:textSize="12sp" />
+                <TextView android:id="@+id/step_4_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="Saving to local DB" android:textColor="@color/text_grey" android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/proc_step_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp"
+                android:alpha="0.4">
+                <TextView android:id="@+id/step_5_icon" android:layout_width="24dp" android:layout_height="24dp" android:background="@color/s2" android:gravity="center" android:text="○" android:textColor="@color/text_grey" android:textSize="12sp" />
+                <TextView android:id="@+id/step_5_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="Queue for online sync" android:textColor="@color/text_grey" android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/proc_ref_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Ref: EPY-OFF-24031"
+        android:textColor="@color/text_grey"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

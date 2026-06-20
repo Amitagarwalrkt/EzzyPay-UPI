@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">EzzyPay</string>
+    <string name="good_morning">Good morning,</string>
+    <string name="user_name">Rahul Kumar 👋</string>
+    <string name="upi_balance_lbl">💳 UPI Balance</string>
+    <string name="amount_12450">₹12,450</string>
+    <string name="upi_id_linked">rahul@ezzypay · Linked to SBI</string>
+    <string name="add_btn">＋ Add</string>
+    <string name="send_btn">↑ Send</string>
+    <string name="req_btn">⬇ Req</string>
+    <string name="bank_account">Bank Account</string>
+    <string name="sbi_masked">SBI ••••4821</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="bank">Bank</string>
+    <string name="recent">Recent</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="wallet">Wallet</string>
+    <string name="profile">Profile</string>
+
+    <string name="send_money">Send Money</string>
+    <string name="search_hint">Search by name, UPI ID or phone</string>
+    <string name="recent_contacts">Recent Contacts</string>
+    <string name="results">Results</string>
+    <string name="continue_btn">Continue →</string>
+
+    <string name="confirm_receiver">Confirm Receiver</string>
+    <string name="check_before">Check before sending</string>
+    <string name="upi_id_verified">✓ UPI ID Verified</string>
+    <string name="proceed_to_pay">Proceed to Pay →</string>
+    <string name="wrong_person">⛔ Wrong person? Change</string>
+
+    <string name="upi_online">🌐 UPI Online</string>
+    <string name="enter_amount_hint">Enter Amount (₹)</string>
+    <string name="bank_balance_pill">💳 Bank Balance: ₹12,450</string>
+    <string name="pay_amount">Pay %s via UPI →</string>
+
+    <string name="pay_from">Pay From</string>
+    <string name="choose_bank">Choose linked bank account</string>
+    <string name="confirm_bank">Confirm Bank →</string>
+
+    <string name="enter_pin">Enter your 6-digit UPI PIN</string>
+    <string name="pin_security_hint">🔒 Your PIN is never shared with EzzyPay</string>
+    <string name="confirm_and_pay">✓ Confirm &amp; Pay</string>
+
+    <string name="processing">Processing…</string>
+    <string name="connecting_bank">Connecting to bank server\nPlease don\'t close the app</string>
+
+    <string name="money_sent">Money Sent!</string>
+    <string name="back_to_home">🏠 Back to Home</string>
+    <string name="share_receipt">📤 Share Receipt</string>
+
+    <string name="payment_failed">Payment Failed</string>
+    <string name="money_safe">Your money is safe.\nNo amount was deducted.</string>
+    <string name="retry_payment">↺ Retry Payment</string>
+    <string name="pay_offline_wallet">⚡ Pay via Offline Wallet</string>
+</resources>

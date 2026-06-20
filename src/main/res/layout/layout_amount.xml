@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_amount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/btn_back_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="← Back"
+        android:textColor="@color/text_grey"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/mode_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/s2"
+        android:padding="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btn_back_amount">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_primary_bg"
+            android:gravity="center"
+            android:padding="9dp"
+            android:text="@string/upi_online"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="9dp"
+            android:text="⚡ Wallet"
+            android:textColor="@color/text_grey"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/receiver_mini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/mode_tabs">
+        <TextView
+            android:id="@+id/tv_amount_receiver_initials"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/btn_primary_bg"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_amount_receiver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipient Name"
+                android:textColor="@color/text_white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_amount_receiver_upi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="upiid@bank"
+                android:textColor="@color/success_green"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/amount_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintTop_toBottomOf="@id/receiver_mini">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_amount_hint"
+            android:textColor="@color/text_grey"
+            android:textSize="12sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_amount_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="3dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/cyan" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_amount_balance_pill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#1100F5A0"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="@string/bank_balance_pill"
+            android:textColor="@color/success_green"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quick_amts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/amount_display">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:background="@color/s2" android:paddingHorizontal="12dp" android:paddingVertical="5dp" android:text="₹100" android:textColor="@color/text_white" android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:background="@color/s2" android:paddingHorizontal="12dp" android:paddingVertical="5dp" android:text="₹500" android:textColor="@color/text_white" android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:background="@color/s2" android:paddingHorizontal="12dp" android:paddingVertical="5dp" android:text="₹1K" android:textColor="@color/text_white" android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:background="@color/s2" android:paddingHorizontal="12dp" android:paddingVertical="5dp" android:text="₹2K" android:textColor="@color/text_white" android:textSize="12sp" android:textStyle="bold" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/numpad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:columnCount="3"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_pay_amount">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="1" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="2" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="3" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="4" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="5" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="6" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="7" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="8" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="9" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="." android:textColor="@color/text_grey" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="0" android:textColor="@color/text_white" android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:gravity="center" android:padding="14dp" android:text="⌫" android:textColor="@color/text_grey" android:textSize="24sp" android:textStyle="bold" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_pay_amount"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_primary_bg"
+        android:text="Pay ₹0 via UPI →"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

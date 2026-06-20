@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/layout_login" />
+    <include layout="@layout/layout_otp" />
+    <include layout="@layout/layout_home" />
+    <include layout="@layout/layout_scanner" />
+    <include layout="@layout/layout_search" />
+    <include layout="@layout/layout_confirm" />
+    <include layout="@layout/layout_bank_select" />
+    <include layout="@layout/layout_amount" />
+    <include layout="@layout/layout_pin" />
+    <include layout="@layout/layout_processing" />
+    <include layout="@layout/layout_success" />
+    <include layout="@layout/layout_fail" />
+    <include layout="@layout/layout_request" />
+    <include layout="@layout/layout_wallet" />
+    <include layout="@layout/layout_history" />
+    <include layout="@layout/layout_profile" />
+    <include layout="@layout/layout_transaction_detail" />
+    <include layout="@layout/layout_wpin_setup" />
+    <include layout="@layout/layout_wpin_entry" />
+    <include layout="@layout/layout_sync_queue" />
+    <include layout="@layout/layout_ussd_confirm" />
+
+    <TextView
+        android:id="@+id/dev_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:elevation="100dp"
+        android:text="Developed by Amit Agarwal"
+        android:textColor="#33FFFFFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
